@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 import Gato.JuegaGato;
 import Colgado.JuegaColgado;
 import Pizza.JuegaPizza;
+import BlackJack.JuegaBlackJack;
 
 public class Juega {
 
@@ -28,24 +29,31 @@ public class Juega {
 			case "0": 
 				System.out.println("Adios ");
 				break;
+				
 			case "1": 
 				JuegaColgado j1 = new JuegaColgado();
 				j1.run();
 				break;
+				
 			case "2":
 				JuegaGato j2 = new JuegaGato();
 				j2.run();
 				break;
+				
 			case "3":
-				System.out.println("lo dudo");
+				JuegaBlackJack j3 = new JuegaBlackJack();
+				j3.run();
 			break;
+			
 			case "4":
 				System.out.println("nica...");
 				break;
+				
 			case "5":
 				JuegaPizza j5 = new JuegaPizza();
 				j5.run();
 				break;
+				
 			default: 
 				System.out.println("opcion no valida");
 			}			
@@ -59,7 +67,7 @@ public class Juega {
 		System.out.println("Elije un juego");		
 		System.out.println("1.- Colgado");
 		System.out.println("2.- Gato");
-		System.out.println("3.- Pacman");
+		System.out.println("3.- Blackjack");
 		System.out.println("4.- Duke Nukem");
 		System.out.println("5.- Pizza");
 		
